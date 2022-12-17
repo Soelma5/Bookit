@@ -1,5 +1,6 @@
 package com.bookit.step_definitions;
 
+import com.bookit.pages.SelfPage;
 import com.bookit.utilities.BookitUtils;
 import com.bookit.utilities.ConfigurationReader;
 import com.bookit.utilities.DB_Util;
@@ -80,11 +81,36 @@ public class ApiStepDefs {
         String expectedRole = dbMap.get("role");
 
 
-        // ASSERTIONS
+        // ASSERTIONS API vs DB
 
         assertEquals(expectedFirstname, actualFirstName);
         assertEquals(expectedLastname, actualLastName);
         assertEquals(expectedRole, actualRole);
+
+        // GET DATA FROM UI
+
+        SelfPage selfPage = new SelfPage();
+        String actualNameFromUI = selfPage.name.getText();
+        String actualRoleFromUI = selfPage.role.getText();
+
+
+        // expected, actual
+        // UI vs DB Assertion
+        String expectedName = expectedFirstname+" "+expectedLastname;
+        Assert.assertEquals(expectedName, actualNameFromUI);
+        Assert.assertEquals(expectedRole, actualRoleFromUI);
+
+        // UI vs API Assertion
+        String actualNameFromAPI = actualFirstName+" "+actualLastName;
+        Assert.assertEquals(actualNameFromAPI, actualNameFromUI);
+        Assert.assertEquals(actualRole, actualRoleFromUI);
+
+
+
+    }
+
+    @Then("UI, API and Database user information must be match")
+    public void ui_api_and_database_user_information_must_be_match() {
 
     }
     }

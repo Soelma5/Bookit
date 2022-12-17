@@ -50,7 +50,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3,
+                5,
                 0,
                 0,
                 0,
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>16 Dec 2022, 10:51</td>
+      <td>17 Dec 2022, 16:23</td>
     </tr>
   </tbody>
 </table>
@@ -325,18 +325,18 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_4237167622.html">User Verification</a></td>
 
-        <td      class="passed"    >3</td>
+        <td      class="passed"    >5</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">3</td>
+        <td class="total">5</td>
 
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2197399000">2.197</td>
+        <td class="duration" data-value="16500146000">16.500</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -344,18 +344,18 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>3</td>
+      <td>5</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
+      <td>5</td>
 
       <td>1</td>
       <td>0</td>
       <td>1</td>
 
-      <td class="duration">2.197</td>
+      <td class="duration">16.500</td>
       <td>1</td>
     </tr>
     <tr>

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>16 Dec 2022, 10:51</td>
+      <td>17 Dec 2022, 16:23</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@wip</td>
-          <td      class="passed"    >3</td>
+          <td      class="passed"    >5</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">3</td>
+          <td class="total">5</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="2197399000">2.197</td>
+          <td class="duration" data-value="16500146000">16.500</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -179,17 +179,18 @@ $(document).ready(function() {
     <b>Tags:</b>
        <a href="report-tag_2149507997.html">@wip</a>
        <a href="report-tag_2147548349.html">@db</a>
+       <a href="report-tag_2147548883.html">@ui</a>
 </div>
 
 
-  <span class="lead-duration duration">2.197</span>
+  <span class="lead-duration duration">16.500</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">verify information about logged user from api and database</span>
+  <span class="name">three point/layer (UI/API/DATABASE)</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -220,7 +221,23 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.bookit.step_definitions.Hooks.dbHook()</span>
 
-  <span class="lead-duration duration">0.530</span>
+  <span class="lead-duration duration">0.682</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.bookit.step_definitions.Hooks.setUp()</span>
+
+  <span class="lead-duration duration">3.504</span>
 
           </div>
 
@@ -255,9 +272,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
+  <span class="name">user logs in using <span class="argument">&quot;team-leader&quot;</span> credentials</span>
+
+  <span class="lead-duration duration">8.095</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user is on the my self page</span>
+
+  <span class="lead-duration duration">3.832</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
   <span class="name">I logged Bookit api using as a <span class="argument">&quot;team-leader&quot;</span></span>
 
-  <span class="lead-duration duration">1.964</span>
+  <span class="lead-duration duration">3.699</span>
 
 </div>
 
@@ -284,7 +355,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I sent get get request to <span class="argument">&quot;/api/users/me&quot;</span> endpoint</span>
 
-  <span class="lead-duration duration">0.150</span>
+  <span class="lead-duration duration">0.872</span>
 
 </div>
 
@@ -309,9 +380,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the information about current user from api and database should match</span>
+  <span class="name">UI, API and Database user information must be match</span>
 
-  <span class="lead-duration duration">0.082</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -354,9 +425,25 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
+              <span class="location name">com.bookit.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.299</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
               <span class="location name">com.bookit.step_definitions.Hooks.afterDbHook()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
